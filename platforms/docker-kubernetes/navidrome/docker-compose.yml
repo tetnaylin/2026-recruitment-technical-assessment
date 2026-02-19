@@ -9,5 +9,5 @@ services:
       # Optional: put your config options customization here. Examples:
       # ND_LOGLEVEL: debug
     volumes:
-      - "/path/to/data:/data"
-      - "/path/to/your/music/folder:/music:ro"
+      - "./data:/data"
+      - "./music:/music:ro"

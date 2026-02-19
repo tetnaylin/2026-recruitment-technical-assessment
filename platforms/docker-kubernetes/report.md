@@ -15,4 +15,5 @@
 ## Kubernetes
 
 <!-- TODO: Document your process for deploying Navidrome on Kubernetes -->
-I first setup minikube and test it to see if it is working correctly.
+- I first setup minikube and test it to see if it is working correctly.
+- ran into an error `validating /home/tetnaylin/2026-recruitment-technical-assessment/platforms/docker-kubernetes/navidrome/docker-compose.yml: services.navidrome.environment must be a mapping`

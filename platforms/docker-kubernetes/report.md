@@ -30,3 +30,5 @@
 - Considering if it is a problem with wsl or port forwarding.
 - Finally found `minikube service <service-name> --url`
 - Used `minikube service navidrome --url` to finally access the navidrome instance via localhost.
+- Discovered `https://kubernetes.io/docs/concepts/services-networking/service/`
+- Can use `kubectl apply -f` to make use of the yaml files instead of in the terminal.

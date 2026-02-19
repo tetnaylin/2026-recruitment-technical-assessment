@@ -15,3 +15,4 @@
 ## Kubernetes
 
 <!-- TODO: Document your process for deploying Navidrome on Kubernetes -->
+I first setup minikube and test it to see if it is working correctly.

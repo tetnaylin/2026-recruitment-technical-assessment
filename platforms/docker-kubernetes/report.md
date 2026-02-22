@@ -5,12 +5,12 @@
 
 ## Dockerfile
 
-<!-- TODO: (Optional) Explain any specific goals or design decisions -->
-
-### Forked repository
-
-<!-- TODO: If you submitted your changes to a fork, replace with your forked repository -->
-`https://github.com/your-username/academic-calendar-api`
+<!-- Explaining specific goals and design decisions -->
+- Using `node` as the base image instead of `ubuntu` to not include unnecessary os packages.
+- Ordered instructions for maximum cache resuse with `COPY package*.json ./` instead of just `COPY . .` before installing the dependencies to minimise reinstallations so that the build time can be reduced.
+- Using `.dockerignore` to not copy unnecessary items so that there is less memory usage and faster docker builds.
+- Using `npm ci` to clean install dependencies to prevent residual or possibly corrupted packages from affecting the build.
+- Using multi-stage builds to seperate buildtime and runtime concerns so that this leads to smaller images and faster startups.
 
 ## Kubernetes
 
